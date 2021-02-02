@@ -1,0 +1,14 @@
+canvas {
+    border: 1px solid lightgray;
+    height: 200px;
+}
+
+h1 {
+    font-family: arial;
+    color: dimgray;
+}
+
+body {
+    font-family: arial;
+    margin: 30px;
+}
