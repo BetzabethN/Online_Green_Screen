@@ -21,10 +21,14 @@ function loadBackgroundImage() {
 }
 
 function clearCanvas() {
-    clearcanvas(can1);
-    clearcanvas(can2);
-
+    doClear(can1);
+    doClear(can2);
 }
+
+function doClear(canvas) {
+    var context = canvas.getContext("2d");
+    context.clearRect(0,0,canvas.width,canvas.height);
+  }
 
 function greenScreen() {
     //check if foreground image is loaded or completely finished loaded
@@ -58,3 +62,4 @@ function greenScreen() {
     //show composite on canvas 1
     output.drawTo(can1);
 }
+
