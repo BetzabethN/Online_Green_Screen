@@ -1,6 +1,6 @@
 canvas {
     border: 1px solid dimgray;
-    height: 500px;
+    height: 300px;
 }
 
 h1, h2 {
@@ -15,7 +15,7 @@ body {
 
 .container {
     margin-top: 50px;
-    align-self: center;
+    align-content: center;
 }
 
 button {
