@@ -20,6 +20,12 @@ function loadBackgroundImage() {
 
 }
 
+function clearCanvas() {
+    clearcanvas(can1);
+    clearcanvas(can2);
+
+}
+
 function greenScreen() {
     //check if foreground image is loaded or completely finished loaded
     if (fgImage == null || !fgImage.complete()) {
