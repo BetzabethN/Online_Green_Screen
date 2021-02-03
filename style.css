@@ -12,3 +12,7 @@ body {
     font-family: arial;
     margin: 30px;
 }
+
+.container {
+    margin-top: 50px;
+}

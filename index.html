@@ -13,12 +13,36 @@
 </head>
 
 <body>
-    <h1>Upload and Display Image</h1>
+    <div class="container">
+        <h1>Online Green Screen Compiler</h1>
+        <div>
+            Compile a foreground image that has a green screen with a background image.
+        </div>
+        <h3>Upload and Display Image</h3>
+    </div> <br>
+    
 
-    <canvas id="can"></canvas>
+    <!-- two canvases, one for foreground image and one for background image -->
+    <canvas id="can-F"></canvas>
+    <canvas id="can-B"></canvas>
 
-    <p>Filename:
-        <input type="file" multiple="false" accept="image/*" id="finput" onchange="upload()">
-    </p>
+
+    <!-- upload foreground and background images -->
+    <div>
+        <p>Foreground:
+            <input type="file" multiple="false" accept="image/*" id="fgfile" onchange="loadForegroundImage()">
+        </p>
+    </div>
+    <div>
+        <p>Background:
+            <input type="file" multiple="false" accept="image/*" id="bgfile" onchange="loadBackgroundImage()">
+        </p>
+    </div> <br>
+
+
+    <!-- two buttons, one to creat the composite and one two clear the canvases -->
+    <input type="button" id="c_composite" onclick="greenScreen()">
+    <input type="button" id="clear_can" onclick="clearCanvas()">
+    
 </body>
 </html>
