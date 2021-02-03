@@ -18,31 +18,32 @@
         <div>
             Compile a foreground image that has a green screen with a background image.
         </div>
-        <h3>Upload and Display Image</h3>
-    </div> <br>
+        <h2>Upload and Display Image</h2>
+        <br>
     
 
-    <!-- two canvases, one for foreground image and one for background image -->
-    <canvas id="can-F"></canvas>
-    <canvas id="can-B"></canvas>
+        <!-- two canvases, one for foreground image and one for background image -->
+        <canvas id="can-F"></canvas>
+        <canvas id="can-B"></canvas>
 
 
-    <!-- upload foreground and background images -->
-    <div>
-        <p>Foreground:
-            <input type="file" multiple="false" accept="image/*" id="fgfile" onchange="loadForegroundImage()">
-        </p>
+        <!-- upload foreground and background images -->
+        <div>
+            <p>Foreground:
+                <input type="file" multiple="false" accept="image/*" id="fgfile" onchange="loadForegroundImage()">
+            </p>
+        </div>
+        <div>
+            <p>Background:
+                <input type="file" multiple="false" accept="image/*" id="bgfile" onchange="loadBackgroundImage()">
+            </p>
+        </div> <br>
+
+
+        <!-- two buttons, one to creat the composite and one two clear the canvases -->
+        <input type="button" value="Create Composite" id="c_composite" onclick="greenScreen()">
+        <input type="button" value="Clear Canvases" id="clear_can" onclick="clearCanvas()">
     </div>
-    <div>
-        <p>Background:
-            <input type="file" multiple="false" accept="image/*" id="bgfile" onchange="loadBackgroundImage()">
-        </p>
-    </div> <br>
-
-
-    <!-- two buttons, one to creat the composite and one two clear the canvases -->
-    <input type="button" id="c_composite" onclick="greenScreen()">
-    <input type="button" id="clear_can" onclick="clearCanvas()">
     
 </body>
 </html>
